@@ -20,7 +20,7 @@ $$L(Y,P(Y|X)) = -\log P(Y|X)$$
 
 逻辑回归的P(Y=y|x)表达式如下（为了将类别标签y统一为1和0，下面将表达式分开表示）：
 
-$$P(Y=g|x) = \left\{\begin{matrix}h_\theta=g(f(x))=\frac{1}{1+exp(-f(x))} &,y=1\\ 1-h_\theta=1-g(f(x))=\frac{1}{1+exp(-f(x)} _\theta=g(f(x))=\frac{1}{1+exp(f(x))}&,y=0 \end{matrix}\right.$$
+$$P(Y=g|x) = \left(\begin{matrix}h_\theta=g(f(x))=\frac{1}{1+exp(-f(x))} &,y=1\\ 1-h_\theta=1-g(f(x))=\frac{1}{1+exp(-f(x)} _\theta=g(f(x))=\frac{1}{1+exp(f(x))}&,y=0 \end{matrix}\right.$$
 
 将它带入到上式，通过推导可以得到logistic的损失函数表达式，如下：
 
